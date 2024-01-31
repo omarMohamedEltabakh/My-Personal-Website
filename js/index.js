@@ -220,13 +220,13 @@ function handleScroll() {
     }
   }
 
-  if (window.scrollY >= portfolio.offsetTop+100) {
+  if (window.scrollY >= portfolio.offsetTop + 100) {
     for (let index = 0; index < portfolioCartRow3.length; index++) {
       portfolioCartRow3[index].classList.add("animate__fadeInUp");
       portfolioCartRow3[index].classList.remove("opacity-0")
     }
   }
-  if (window.scrollY >= portfolio.offsetTop+300) {
+  if (window.scrollY >= portfolio.offsetTop + 300) {
     for (let index = 0; index < portfolioCartRow4.length; index++) {
       portfolioCartRow4[index].classList.add("animate__fadeInUp");
       portfolioCartRow4[index].classList.remove("opacity-0")
@@ -303,17 +303,19 @@ function startCount(el) {
 
 // add allProjects===================================>
 let allProjects = [
-  { projectName: 'Portfolio', imagePath: "Images/projectImages/react/portfolio.png", liveDemo: "https://portfolio-five-phi-33.vercel.app/",animation:"portfolioCartRow1" },
+  { projectName: 'Portfolio', imagePath: "Images/projectImages/react/portfolio.png", liveDemo: "https://portfolio-five-phi-33.vercel.app/", animation: "portfolioCartRow1" },
   { projectName: 'Dashboard', imagePath: "Images/projectImages/react/admin dashboard.png", liveDemo: "https://admin-dashboard-4454b.web.app/Geography", animation: "portfolioCartRow1" },
-  { projectName: 'E-commerce', imagePath: "Images/projectImages/react/E-commerce.png", liveDemo: "https://e-commerce-pink-three.vercel.app/", animation: "portfolioCartRow1" },
+  { projectName: 'Omar-Protfolio', imagePath: "Images/projectImages//react/smart shopping.png", liveDemo: "https://smart-shopping-git-master-omar-mohameds-projects.vercel.app/", animation: "portfolioCartRow1" },
+  { projectName: 'E-commerce', imagePath: "Images/projectImages/react/E-commerce.png", liveDemo: "https://e-commerce-pink-three.vercel.app/", animation: "portfolioCartRow2" },
   { projectName: 'Prayer-Timings', imagePath: "Images/projectImages/react/Prayer-Timing.png", liveDemo: "https://prayer-time-mu.vercel.app/", animation: "portfolioCartRow2" },
   { projectName: 'Gaming-Review', imagePath: "Images/projectImages/javaScript/gaming review.png", liveDemo: "https://omarmohamedeltabakh.github.io/game-web-site/", animation: "portfolioCartRow2" },
-  { projectName: 'Weather', imagePath: "Images/projectImages/javaScript/weather.png", liveDemo: "https://omarmohamedeltabakh.github.io/weather/", animation: "portfolioCartRow2" },
+  { projectName: 'Weather', imagePath: "Images/projectImages/javaScript/weather.png", liveDemo: "https://omarmohamedeltabakh.github.io/weather/", animation: "portfolioCartRow3" },
   { projectName: 'Restaurant', imagePath: "Images/projectImages/javaScript/resturant.png", liveDemo: "https://omarmohamedeltabakh.github.io/restaurant/", animation: "portfolioCartRow3" },
   { projectName: 'Devfolio', imagePath: "Images/projectImages/html and css/defolio.png", liveDemo: "https://omarmohamedeltabakh.github.io/DevFolio/", animation: "portfolioCartRow3" },
-  { projectName: 'Kerri', imagePath: "Images/projectImages/html and css/Kerri.png", liveDemo: "https://omarmohamedeltabakh.github.io/kerri/", animation: "portfolioCartRow3" },
+  { projectName: 'Kerri', imagePath: "Images/projectImages/html and css/Kerri.png", liveDemo: "https://omarmohamedeltabakh.github.io/kerri/", animation: "portfolioCartRow4" },
   { projectName: 'tailwind', imagePath: "Images/projectImages/html and css/tailwind.png", liveDemo: "https://omarmohamedeltabakh.github.io/TailwindFristProject/", animation: "portfolioCartRow4" },
   { projectName: 'Omar-Protfolio', imagePath: "Images/projectImages//react//omar-portfolio.png", liveDemo: "https://omar-portfolio-five.vercel.app/", animation: "portfolioCartRow4" },
+
 ];
 let cartTemplate = ``
 
@@ -342,7 +344,7 @@ document.getElementById("allProject").insertAdjacentHTML("afterbegin", cartTempl
 
 // add HTML&CSS projects==================================>
 let htmlCssProjects = [
-  { projectName: 'Bezel', imagePath: "Images/projectImages/html and css/bezel.png", liveDemo: "https://omarmohamedeltabakh.github.io/bezelProject/" },
+  { projectName: 'Bezel', imagePath: "Images/projectImages/html and css/bezel.png", liveDemo: "https://omarmohamedeltabakh.github.io/BezelProject/" },
   { projectName: 'Defolio', imagePath: "Images/projectImages/html and css/defolio.png", liveDemo: "https://omarmohamedeltabakh.github.io/DevFolio/" },
   { projectName: 'Fokier', imagePath: "Images/projectImages/html and css/Fokir.png", liveDemo: "https://omarmohamedeltabakh.github.io/fiker/" },
   { projectName: 'Kerri', imagePath: "Images/projectImages/html and css/Kerri.png", liveDemo: "https://omarmohamedeltabakh.github.io/kerri/" },
@@ -418,6 +420,7 @@ document.getElementById("javaScript").innerHTML = javaScriptCartTemplate;
 // react projects=======================================>
 const reactProjects = [
   { projectName: 'Portfolio', imagePath: "Images/projectImages/react/portfolio.png", liveDemo: "https://portfolio-five-phi-33.vercel.app/" },
+  { projectName: 'Smart Shopping', imagePath: "Images/projectImages/react/smart shopping.png", liveDemo: "https://smart-shopping-git-master-omar-mohameds-projects.vercel.app/" },
   { projectName: 'E-commerce', imagePath: "Images/projectImages/react/E-commerce.png", liveDemo: "https://e-commerce-pink-three.vercel.app/" },
   { projectName: 'Admin-Dashboard', imagePath: "Images/projectImages/react/admin dashboard.png", liveDemo: "https://admin-dashboard-4454b.web.app/Geography" },
   { projectName: 'Prayer-Times', imagePath: "Images/projectImages/react/Prayer-Timing.png", liveDemo: "https://prayer-time-mu.vercel.app/" },
